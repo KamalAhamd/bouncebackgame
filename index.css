@@ -1,0 +1,146 @@
+* {
+  margin: 0;
+  padding: 0;
+  font-family: sans-serif;
+  box-sizing: border-box;
+}
+
+body {
+  background-image: url(/bg.jpg);
+}
+
+.front {
+  transform: translate(100%, 50%);
+  background-color: #21c19b;
+  height: 14rem;
+  width: 25rem;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-around;
+  align-items: center;
+  border-radius: 1rem;
+
+  /* box-shadow: 0 0 50px #ccc; */
+  box-shadow: 0 -4px 20px 7px black, 0 4px 20px 7px black;
+  margin-top: 4rem;
+}
+
+.front h1 {
+  text-shadow: 0 0 5px #343434;
+}
+
+input {
+  height: 2rem;
+  padding: 10px;
+  border-radius: 1rem;
+  /* border: black 2px solid; */
+  border: none;
+}
+.btnStart {
+  height: 2rem;
+  width: 7rem;
+  border-radius: 1rem;
+  background-color: #73c9b0;
+  /* border: none; */
+}
+.allParent {
+  display: flex;
+  /* flex-wrap: wrap; */
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  /* display: none; */
+}
+
+.gameParent {
+  margin: 2.5rem;
+  box-shadow: 1.5rem 2rem 2rem -2rem;
+  /* box-shadow: 0 -4px 20px 7px black, 0 4px 20px 7px black; */
+}
+
+/* .gridParent {
+} */
+
+.game {
+  /* width: 20rem; */
+  background-color: #ebcc4f;
+  box-sizing: border-box;
+  border-radius: 1rem;
+  padding: 20px;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  visibility: hidden;
+}
+.grid {
+  position: relative;
+  width: 570px;
+  min-height: 300px;
+  border: 2px solid black;
+  border-radius: 1rem;
+  background-color: #eee356;
+  /* box-shadow: 10rem 20rem 5rem -2rem; */
+  box-shadow: 0 -4px 20px 7px black, 0 4px 20px 7px black;
+  visibility: hidden;
+}
+
+.block {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: #343434;
+}
+
+.user {
+  position: absolute;
+  width: 100px;
+  height: 20px;
+  background-color: #0bb1ad;
+}
+
+.ball {
+  position: absolute;
+  width: 20px;
+  height: 20px;
+  border-radius: 10px;
+  background-color: #29c794;
+}
+
+#score {
+  padding-top: 10px;
+}
+
+.btn {
+  min-height: 2rem;
+  min-width: 7rem;
+  margin: 1rem;
+  background-color: #73c9b0;
+  color: #fff;
+  border-radius: 1rem;
+  border: none;
+  margin-left: 3.3rem;
+}
+
+h4 {
+  color: #036140;
+  letter-spacing: 1.5px;
+}
+
+h3 {
+  color: red;
+}
+
+h5 {
+  font-size: large;
+  color: rgb(2, 180, 180);
+}
+
+@media (max-width: 800px) {
+  .front {
+    background-color: #0bb1ad;
+    margin: auto;
+    margin-top: 150px;
+    transform: translate(0%, 0%);
+  }
+}
